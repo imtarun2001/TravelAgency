@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TravelToEternity</title>
+    <style>
+        *{
+            position: relative;
+            z-index: 30;
+        }
+        .container {
+            width: 100vw;
+            height: 1500px;
+            margin-top: 150px;
+            position: relative;
+            bottom: 20px;
+            background-color: rgb(213, 249, 249);
+        }
+        .containerA{
+            border: 2px solid rgb(252, 250, 250);
+            width: 1250px;
+            margin: auto;
+            height: 120px;
+            font-family: fantasy;
+            font-weight: bolder;
+            line-height: 2px;
+            bottom: 1650px;
+            background-image: url(https://i.pinimg.com/736x/6f/a7/1b/6fa71b6b5525314ca12fd29888db8dc6.jpg),url(https://uploads.dailydot.com/96a/90/11th_Place_-_March_Morning_on_the_Platte_River_7371879846.jpg?q=65&auto=format&w=2270&ar=2:1&fit=crop);
+            background-position:left top,center;
+            background-size: 150px,100%;
+            background-repeat: no-repeat;
+        }
+        .container1 {
+            width: 49vw;
+            height: 49vh;
+            position: relative;
+            z-index: 100;
+            left: 2px;
+
+            background-image: url(https://www.nawpic.com/media/2020/beach-desktop-nawpic-3.webp);
+            background-repeat: no-repeat;
+            background-size: 65%;
+            background-position:center;
+            transition: all 4s;
+            opacity: 80%;
+        }
+
+        .container2 {
+            width: 49vw;
+            height: 49vh;
+            position: relative;
+            z-index: 75;
+            left: 2px;
+            top: 2px;
+            overflow: hidden;
+
+            background-image: url(https://drakensberghikes.com/images/articles/daphne/20180708_082635-01.jpeg);
+            background-repeat: no-repeat;
+            background-size: 64%;
+            background-position:center;
+            transition: all 4s;
+            opacity: 80%;
+        }
+
+        .container3 {
+            width: 49vw;
+            height: 49vh;
+            position: absolute;
+            top: 1px;
+            left: 647px;
+
+            background-image: url(https://www.followyourdetour.com/wp-content/uploads/2020/10/Santorini-Greece-Buildings-scaled.jpg);
+            background-repeat: no-repeat;
+            background-size: 57%;
+            background-position:center;
+            transition: all 4s;
+            opacity: 70%;
+        }
+
+        .container4 {
+            width: 49vw;
+            height: 49vh;
+            position: absolute;
+            z-index: 25;
+            top: 323px;
+            left: 647px;
+
+            background-image: url(https://getwallpapers.com/wallpaper/full/a/5/8/1279282-vertical-paris-hd-wallpaper-1920x1440-for-meizu.jpg);
+            background-repeat: no-repeat;
+            background-size: 69%;
+            background-position:center;
+            transition: all 4s;
+            opacity: 70%;
+        }
+
+        .container5 {
+            width: 1270.8px;
+            height: 300px;
+            margin-top: 120px;
+            position: absolute;
+            z-index: 25;
+            top: 650px;
+            left: 2px;
+
+            background-image: url(https://1.bp.blogspot.com/-_OkGr37Z0WM/YMvk6BGCneI/AAAAAAAA6oU/uboiT94c0r8gMHCbcPDpz8-FOm21GPOiQCLcBGAsYHQ/s1024/Qatar_Airbus_A350-900_A7-ALQ_%252840539348180%2529.jpg), url(https://i.guim.co.uk/img/media/573aef59f7902d2a3f9b5ac7965472d41dcd7efd/0_63_4162_2498/master/4162.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=b83f6dd9eac489cbb67f65fb59fe37aa), url(https://c.ndtvimg.com/2019-04/ec4fnt5o_indigo-a320neo-ndtv_625x300_17_April_19.jpg?ver-20230616.01), url(https://cdn.britannica.com/77/114477-050-4191357E/Plane-on-takeoff-from-the-Amsterdam-Airport-international-airport.jpg);
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position:left top,left bottom,right top, right bottom;
+            transition: all 4s;
+            opacity: 65%;
+        }
+
+        .container6{
+            width: 110px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+
+        .container7{
+            width: 110px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+
+        .container8{
+            max-width: 350px;
+            min-width: 350px;
+            margin: 10px auto;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            background-image: url(https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/35878/calendar-clipart-md.png);
+            background-position: center;
+            background-size: 95%;
+            transition: all 4s;
+            background-repeat: no-repeat;
+        }
+
+        .container9{
+            width: 1270.8px;
+            height: 300px;
+            margin-top: 350px;
+            background-image: url(https://sdg-migration-id.s3.amazonaws.com/Interior-Design-Sordo-Madaleno-Arquitectos-idx190601_sma13-06.19.jpg), url(https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen,f_auto,h_248,q_auto,w_481/itemimages/12/07/1207718_v7.jpeg), url(https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_768,h_511/https://www.essentialhome.eu/blog/wp-content/uploads/2020/04/5-Top-Luxury-Hospitality-Projects-By-Asia%E2%80%99s-Best-Interior-Designers-_5.jpg), url(https://media.cntraveler.com/photos/6317933fbed61f402524718d/3:2/w_3999,h_2666,c_limit/Airelles%20Saint-Tropez,%20Pan%20Dei%20Palais_Grand-Chambre%20Prestige%20Village%20.jpg);
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position:left top,left bottom,right top, right bottom;
+            transition: all 4s;
+            opacity: 65%;
+        }
+        
+        .container11 {
+            border-radius: 20px;
+            background-image: url(https://libg.s3.us-east-2.amazonaws.com/download/Paradise-Beach.jpg);
+            background-position: center;
+            background-size: 120%;
+            background-repeat: no-repeat;
+            color: rgb(253, 253, 253);
+            width: 95vw;
+            height: 40px;
+            margin: -1650px 5px;
+            position: fixed;
+            opacity: 70%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .subitem {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            display: inline-block;
+            margin: 8px 60px;
+            position: relative;
+            margin-left: 3%;
+            opacity: 100%;
+        }
+        
+        .subitem:hover {
+            background-color: rgb(239, 253, 253);
+            padding: 3px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 300;
+            border-radius: 8px;
+            color: black;
+            cursor: pointer;
+        }
+        #inp1{
+            height: 30px;
+            width: 60px;
+            margin-left: 100px;
+            border-radius: 5%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: small;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            left: 980px;
+            bottom: 75px;
+            background-color: rgb(213, 210, 210);
+            color: rgb(202, 12, 245);
+            opacity: 95%;
+        }
+        #inp1:hover{
+            background-color: rgb(144, 148, 148);
+            padding: 3px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            border-radius: 8px;
+            color: rgb(22, 34, 251);
+            cursor: pointer;
+        }
+        #inp2{
+            height: 30px;
+            width: 65px;
+            margin-left: 80px;
+            border-radius: 10%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: small;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            left: 870px;
+            bottom: 75px;
+            background-color: rgb(196, 249, 249);
+            color: rgb(149, 12, 240);
+            opacity: 95%;
+        }
+        #inp2:hover {
+            background-color: rgb(195, 249, 249);
+            padding: 3px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            border-radius: 8px;
+            color: rgb(76, 5, 241);
+            cursor: pointer;
+        }
+
+        
+        #inp3{
+            border-radius: 10px;
+            width: 400px;
+            height: 30px;
+            left: 375px;
+            bottom: 1600px;
+            opacity: 70%;
+            position: relative;
+        }
+        #inp4{
+            border-radius: 10px;
+            width: 400px;
+            height: 30px;
+            left: -335px;
+            top: -260px;
+            opacity: 90%;
+        }
+
+        #inp5{
+            border-radius: 10px;
+            width: 400px;
+            height: 30px;
+            right: -440px;
+            top: -210px;
+            opacity: 90%;
+        }
+        #inp6{
+            border-radius: 10px;
+            width: 400px;
+            height: 30px;
+            right: 330px;
+            top: -150px;
+            opacity: 100%;
+        }
+        #inp7{
+            margin-left: 450px;
+            margin-top: 60px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 800;
+        }
+        #inp7:hover{
+            cursor: pointer;
+        }
+        #inp8{
+            margin-left: 250px;
+            margin-top: 60px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 800;
+        }
+        #inp8:hover{
+            cursor: pointer;
+        }
+        #si1{
+            font-weight: 700;
+        }
+
+        #si2{
+            font-weight: 700;
+        }
+    
+        #si3{
+            color: black;
+            font-weight: 700;
+        }
+
+        #si4{
+            color: black;
+            font-weight: 700;
+        }
+
+        #si5{
+            color: black;
+            font-weight: 700;
+        }
+
+        span{
+            color: black;
+            font-weight: 700;
+        }
+
+        .img1{
+            right: 70px;
+            top: 13.5px;
+        }
+        .img2{
+            position: relative;
+            left: 250px;
+            width: 770px;
+        }
+        .img3{
+            right: 380px;
+            bottom: 255px;
+        }
+        .img4{
+            left: 395px;
+            bottom: 205px;
+        }
+        .img7{
+            display: inline-block;
+            position: relative;
+            left: -70px;
+            top: 13px;
+        }
+        .img8{
+            display: inline-block;
+            position: relative;
+            left: -50px;
+            top: 13px;
+        }
+        .img9{
+            display: inline-block;
+            position: relative;
+            left: -30px;
+            top: 13px;
+        }
+        .img10{
+            position: relative;
+            bottom: 1597px;
+            left: 270px;
+        }
+        .img11{
+            display: inline-block;
+            position: relative;
+            left: -19px;
+            top: 22px;
+        }
+        .img7:hover{
+            cursor: pointer;
+        }
+        .img8:hover{
+            cursor: pointer;
+        }
+        .img9:hover{
+            cursor: pointer;
+        }
+        .img11:hover{
+            cursor: pointer;
+        }
+        #inp3,.ardep:hover{
+            cursor: text;
+        }
+        h2{
+            color: rgb(252, 251, 253);
+            text-align: center;
+            font-weight: bolder;
+            font-family:cursive;
+            margin-top: 50px;
+        }
+        .container1:hover{
+            transform: scale(1.2);
+        }
+        .container2:hover{
+            transform: scale(1.2);
+        }
+        .container3:hover{
+            transform: scale(1.2);
+        }
+        .container4:hover{
+            transform: scale(1.2);
+        }
+        .container5:hover{
+            transform: scale(1.2);
+        }
+        .container8:hover{
+            transform: scale(1.2);
+        }
+        .container9:hover{
+            transform: scale(1.2);
+        }
+        .p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: inline-block;
+            position: relative;
+            bottom: 31px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="MainContainer">
+        <div class="container">
+            <div class="container1">
+                
+            </div>
+            <div class="container2">
+                
+            </div>
+            <div class="container3">
+                
+            </div>
+            <div class="container4">
+    
+            </div>
+            <div class="container5">
+                <img src="https://turbli.com/static/images/20201201-turbli/cover_169.jpg" height="300px" alt="image not found" class="img2">
+                <input type="search" value="Departure Airport...." id="inp4" class="ardep1">
+                <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-23.png" width="35px" alt="image not found" class="img3">
+                <input type="search" value="Destination Airport...." id="inp5" class="ardep1">
+                <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-23.png" width="35px" alt="image not found" class="img4">
+            </div>
+            <div class="container8">
+                <div class="container6">
+                    <p>Enter the date of Departure</p>
+                    <input type="date" width="100px" class="ardep">
+                </div>
+                <div class="container7">
+                    <p>Enter the date of Arrival</p>
+                    <input type="date" width="100px" class="ardep">
+                </div>
+            </div>
+            <div class="container9">
+                <img src="https://cdn.fodors.com/ee/files/slideshows/20-Andara-Resort-and-Villas.jpg" height="300px" alt="image not found" class="img2">
+                <input type="search" value="Search Hotel to Stay...." id="inp6" class="ardep">
+            </div>
+            <div class="container10">
+                <input type="reset" value="reset" id="inp7">
+                <input type="submit" value="submit" id="inp8">
+                <p class="p">Payment Gateways</p>
+                <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/phonepe-logo-icon.png" width="40px" alt="" class="img7">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-pay-2038779-1721670.png?f=webp" width="40px" alt="" class="img8">
+                <img src="https://play-lh.googleusercontent.com/6_Qan3RBgpJUj0C2ct4l0rKKVdiJgF6vy0ctfWyQ7aN0lBjs78M-1cQUONQSVeo2jfs" width="40px" alt="" class="img9">
+                <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-png-transparent-svg-vector-bie-supply-0.png" width="60px" alt="" class="img11">
+            </div>
+        </div>
+        <div class="containerA">
+            <h2>~^ We Welcome You ^~</h2>
+            <h2>Let's Explore This Beautiful World</h2>
+            <div class="inpb">
+                <input type="button" value="LOGIN" class="subitem" id="inp1">
+                <input type="button" value="SIGNUP" class="subitem" id="inp2">
+            </div>
+        </div>
+        <div>
+            <div class="container11">
+                <div class="subitem" id="si1">What We Offer</div>
+                <div class="subitem" id="si2">Start Plan<span>ning</span></div>
+                <div class="subitem" id="si3">Blog</div>
+                <div class="subitem" id="si4">Reviews</div>
+                <div class="subitem" id="si5">Contact us</div>
+            </div>
+            <div class="container12">
+                <div class="item" id="i1">
+                    <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-23.png" width="35px" alt="" class="img1">
+                    <input type="search" value="Search the destination" class="subitem" id="inp3">
+                    <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-23.png" width="35px" alt="image not found" class="img10">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
